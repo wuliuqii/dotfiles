@@ -70,7 +70,6 @@ M.mason = {
 
     -- go
     "gopls",
-    "goimports",
     "golangci-lint",
 
     -- rust

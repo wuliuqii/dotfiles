@@ -12,7 +12,7 @@ local sources = {
   b.formatting.stylua,
 
   -- go
-  b.formatting.goimports,
+  b.formatting.gofmt,
   b.diagnostics.golangci_lint,
 
   -- rust

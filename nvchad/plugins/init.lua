@@ -7,6 +7,28 @@ return {
     end,
   },
 
+  ["simrat39/rust-tools.nvim"] = {
+	after = "nvim-lspconfig",
+	config = function ()
+	  require "custom.plugins.rust-tools"
+	end,
+  },
+
+  ["simrat39/symbols-outline.nvim"] = {
+	after = "nvim-lspconfig",
+	config = function ()
+	  require "custom.plugins.symbols-outline"
+	end,
+  },
+
+  ["folke/trouble.nvim"] = {
+	after = "nvim-lspconfig",
+	requires = "kyazdani42/nvim-web-devicons",
+	config = function()
+	  require "custom.plugins.trouble"
+	end,
+  },
+
   -- minimal modes
   ["Pocco81/TrueZen.nvim"] = {
     cmd = {
@@ -30,13 +52,6 @@ return {
   ["goolord/alpha-nvim"] = {
     disable = false,
     cmd = "Alpha",
-  },
-
-  ["stevearc/aerial.nvim"] = {
-    cmd = "AerialToggle",
-    config = function()
-      require "custom.plugins.aerial"
-    end,
   },
 
   ["neovim/nvim-lspconfig"] = {

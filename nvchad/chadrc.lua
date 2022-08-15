@@ -16,10 +16,7 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "gruvchad",
-  hl_add = require("custom.highlights").new_hlgroups,
-  theme_toggle = { "gruvchad", "gruvbox_light" },
-  hl_override = require("custom.highlights").overriden_hlgroups,
+  theme = "chadracula",
 }
 
 M.mappings = require "custom.mappings"
