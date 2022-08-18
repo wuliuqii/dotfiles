@@ -1,9 +1,9 @@
 local present, outline = pcall(require, "symbols-outline")
 
 if not present then
-  return
+	return
 end
 
-outline.setup {
-  width = 15,
-}
+outline.setup({
+	width = 15,
+})

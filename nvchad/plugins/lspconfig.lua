@@ -13,12 +13,12 @@ for _, lsp in ipairs(servers) do
 	}
 
 	if lsp == "rust_analyzer" then
-		require("rust-tools").setup {
+		require("rust-tools").setup({
 			tools = {
 				on_initialized = function()
-					vim.cmd [[
+					vim.cmd([[
 						autocmd BufEnter,CursorHold,InsertLeave,BufWritePost *.rs silent! lua vim.lsp.codelens.refresh()	
-					]]
+					]])
 				end,
 			},
 			server = {
@@ -35,7 +35,7 @@ for _, lsp in ipairs(servers) do
 					},
 				},
 			},
-		}
+		})
 
 		goto continue
 	end

@@ -3,79 +3,79 @@
 local M = {}
 
 M.telescope = {
-  extensions_list = { "themes", "terms", "aerial" },
+	extensions_list = { "themes", "terms", "aerial" },
 }
 
 M.treesitter = {
-  ensure_installed = {
-    "vim",
-    "toml",
-    "lua",
-    "go",
-    "rust",
-  },
+	ensure_installed = {
+		"vim",
+		"toml",
+		"lua",
+		"go",
+		"rust",
+	},
 }
 
 M.nvimtree = {
-  git = {
-    enable = true,
-  },
+	git = {
+		enable = true,
+	},
 
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
-  },
+	renderer = {
+		highlight_git = true,
+		icons = {
+			show = {
+				git = true,
+			},
+		},
+	},
 }
 
 M.blankline = {
-  filetype_exclude = {
-    "help",
-    "terminal",
-    "alpha",
-    "packer",
-    "lspinfo",
-    "TelescopePrompt",
-    "TelescopeResults",
-    "nvchad_cheatsheet",
-    "lsp-installer",
-    "",
-  },
+	filetype_exclude = {
+		"help",
+		"terminal",
+		"alpha",
+		"packer",
+		"lspinfo",
+		"TelescopePrompt",
+		"TelescopeResults",
+		"nvchad_cheatsheet",
+		"lsp-installer",
+		"",
+	},
 }
 
 M.alpha = {
-  header = {
-    val = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄ ",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █ ",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █ ",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█     ",
-    },
-  },
+	header = {
+		val = {
+			"           ▄ ▄                   ",
+			"       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+			"       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+			"    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+			"  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+			"  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄ ",
+			"▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █ ",
+			"█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █ ",
+			"    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█     ",
+		},
+	},
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
+	ensure_installed = {
+		-- lua stuff
+		"lua-language-server",
+		"stylua",
 
-    -- go
-    "gopls",
-    "golangci-lint",
+		-- go
+		"gopls",
+		"golangci-lint",
 
-    -- rust
-    "rust-analyzer",
-    "taplo",
-  },
+		-- rust
+		"rust-analyzer",
+		"taplo",
+	},
 }
 
 return M
