@@ -2,7 +2,6 @@ local M = {}
 local override = require("custom.override")
 
 M.plugins = {
-
 	override = {
 		["kyazdani42/nvim-tree.lua"] = override.nvimtree,
 		["nvim-treesitter/nvim-treesitter"] = override.treesitter,
