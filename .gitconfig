@@ -1,0 +1,7 @@
+[https]
+	proxy = http://127.0.0.1:15236
+[http]
+	proxy = http://127.0.0.1:15236
+[user]
+	email = h1090703848@gmail.com
+	name = wuliuqii
