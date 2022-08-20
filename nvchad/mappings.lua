@@ -35,12 +35,6 @@ M.shade = {
 	},
 }
 
-M.symbols_outline = {
-	n = {
-		["<leader>so"] = { "<cmd> SymbolsOutline <CR>", "Toggle symbols outline" },
-	},
-}
-
 M.truzen = {
 	n = {
 		["<leader>ta"] = { "<cmd> TZAtaraxis <CR>", "   truzen ataraxis" },
