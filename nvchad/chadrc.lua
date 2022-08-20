@@ -9,6 +9,7 @@ M.plugins = {
 		["goolord/alpha-nvim"] = override.alpha,
 		["williamboman/mason.nvim"] = override.mason,
 		["nvim-telescope/telescope.nvim"] = override.telescope,
+		["hrsh7th/nvim-cmp"] = override.cmp,
 	},
 
 	user = require("custom.plugins"),

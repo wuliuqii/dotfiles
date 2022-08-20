@@ -13,6 +13,19 @@ M.general = {
 
 		["<S-h>"] = { "^", "begin of line" },
 		["<S-l>"] = { "$", "end of line" },
+		["<C-q>"] = { ":w <CR>", "quit" },
+
+		[";"] = { ":" },
+	},
+	i = {
+		["jk"] = { "<ESC>" },
+		["zz"] = { "<ESC> zz i" },
+	},
+}
+
+M.aerial = {
+	n = {
+		["<leader>a"] = { "<cmd> AerialToggle <CR>", "   toggle aerial symbols outline" },
 	},
 }
 

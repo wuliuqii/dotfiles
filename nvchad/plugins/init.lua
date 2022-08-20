@@ -14,6 +14,14 @@ return {
 		end,
 	},
 
+	["stevearc/aerial.nvim"] = {
+		after = "nvim-treesitter",
+		cmd = "AerialToggle",
+		config = function()
+			require("aerial").setup()
+		end,
+	},
+
 	["folke/trouble.nvim"] = {
 		after = "nvim-lspconfig",
 		requires = "kyazdani42/nvim-web-devicons",
