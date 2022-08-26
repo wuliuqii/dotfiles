@@ -8,10 +8,7 @@ return {
 	},
 
 	["simrat39/rust-tools.nvim"] = {
-		after = "nvim-lspconfig",
-		config = function()
-			require("custom.plugins.rust-tools")
-		end,
+		ft = { "rust" },
 	},
 
 	["stevearc/aerial.nvim"] = {

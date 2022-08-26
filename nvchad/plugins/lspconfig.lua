@@ -13,7 +13,13 @@ for _, lsp in ipairs(servers) do
 	}
 
 	if lsp == "rust_analyzer" then
-		require("rust-tools").setup({
+		local present, rt = pcall(require, "rust-tools")
+
+		if not present then
+			goto continue
+		end
+
+		rt.setup({
 			tools = {
 				on_initialized = function()
 					vim.cmd([[

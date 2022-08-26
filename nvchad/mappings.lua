@@ -13,7 +13,8 @@ M.general = {
 
 		["<S-h>"] = { "^", "begin of line" },
 		["<S-l>"] = { "$", "end of line" },
-		["<C-q>"] = { ":w <CR>", "quit" },
+		["<C-q>"] = { ":q <CR>", "quit" },
+		["<C-s>"] = { ":w <CR>", "save" },
 
 		[";"] = { ":" },
 	},
@@ -66,6 +67,26 @@ M.trouble = {
 	n = {
 		["<leader>t"] = { "<cmd> TroubleToggle <CR>", "open the trouble list" },
 		["<leader>tw"] = { "<cmd> TroubleToggle workspace_diagnostics <CR>", "workspace diagnostics from lsp" },
+	},
+}
+
+M.rust_tools = {
+	n = {
+		["<leader>rh"] = { "<cmd> RustSetInlayHints <CR>" },
+		["<leader>rhd"] = { "<cmd> RustDisableInlayHints <CR>" },
+		["<leader>rr"] = { "<cmd> RustRunnables <CR>" },
+		["<leader>rem"] = { "<cmd> RustExpandMacro <CR>" },
+		["<leader>roc"] = { "<cmd> RustOpenCargo <CR>" },
+		["<leader>rpm"] = { "<cmd> RustParentModule <CR>" },
+		["<leader>rjl"] = { "<cmd> RustJoinLines <CR>" },
+		["<leader>rha"] = { "<cmd> RustHoverActions <CR>" },
+		["<leader>rhr"] = { "<cmd> RustHoverRange <CR>" },
+		["<leader>rmd"] = { "<cmd> RustMoveItemDown <CR>" },
+		["<leader>rmu"] = { "<cmd> RustMoveItemUp <CR>" },
+		["<leader>rsb"] = { "<cmd> RustStartStandaloneServerForBuffer <CR>" },
+		["<leader>rd"] = { "<cmd> RustDebuggables <CR>" },
+		["<leader>rv"] = { "<cmd> RustViewCrateGraph <CR>" },
+		["<leader>rw"] = { "<cmd> RustReloadWorkspace <CR>" },
 	},
 }
 
