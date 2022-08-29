@@ -7,10 +7,20 @@ return {
 		end,
 	},
 
+	-- rust
 	["simrat39/rust-tools.nvim"] = {
 		ft = { "rust" },
 	},
 
+	["saecki/crates.nvim"] = {
+		event = { "BufRead Cargo.toml" },
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("crates").setup()
+		end
+	},
+
+	-- lsp enhance
 	["stevearc/aerial.nvim"] = {
 		after = "nvim-treesitter",
 		cmd = "AerialToggle",

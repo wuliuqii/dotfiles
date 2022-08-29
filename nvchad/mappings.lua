@@ -90,4 +90,26 @@ M.rust_tools = {
 	},
 }
 
+M.crates = {
+	n = {
+		["<leader>ct"] = { ":lua require('crates').toggle() <CR>" },
+		["<leader>cr"] = { ":lua require('crates').reload() <CR>" },
+		["<leader>cv"] = { ":lua require('crates').show_versions_popup() <CR>" },
+		["<leader>cf"] = { ":lua require('crates').show_features_popup() <CR>" },
+		["<leader>cd"] = { ":lua require('crates').show_dependencies_popup() <CR>" },
+		["<leader>cu"] = { ":lua require('crates').update_crate() <CR>" },
+		["<leader>ca"] = { ":lua require('crates').update_all_crates() <CR>" },
+		["<leader>cU"] = { ":lua require('crates').upgrade_crate() <CR>" },
+		["<leader>cA"] = { ":lua require('crates').upgrade_all_crates() <CR>" },
+		["<leader>cH"] = { ":lua require('crates').open_homepage() <CR>" },
+		["<leader>cR"] = { ":lua require('crates').open_repository() <CR>" },
+		["<leader>cD"] = { ":lua require('crates').open_documentation() <CR>" },
+		["<leader>cC"] = { ":lua require('crates').open_crates_io() <CR>" },
+	},
+	v = {
+		["<leader>cu"] = { ":lua require('crates').update_crates() <CR>" },
+		["<leader>cU"] = { ":lua require('crates').upgrade_crates() <CR>" },
+	},
+}
+
 return M
