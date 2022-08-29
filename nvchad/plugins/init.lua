@@ -65,6 +65,14 @@ return {
 		end,
 	},
 
+	-- easymotion but lua
+	["phaazon/hop.nvim"] = {
+		branch = "v2",
+		config = function()
+			require("hop").setup()
+		end,
+	},
+
 	["goolord/alpha-nvim"] = {
 		disable = false,
 		cmd = "Alpha",

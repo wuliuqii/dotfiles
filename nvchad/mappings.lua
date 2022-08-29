@@ -118,4 +118,15 @@ M.undotree = {
 	},
 }
 
+M.hop = {
+	n = {
+		["<leader>hw"] = { "<cmd> HopWord <CR>" },
+		["<leader><leader>"] = { "<cmd> HopWord <CR>" },
+		["<leader>hl"] = { "<cmd> HopLineStart <CR>" },
+		["<leader>hv"] = { "<cmd> HopVertical <CR>" },
+		["<leader>hc"] = { "<cmd> HopChar1 <CR>" },
+		["<leader>hC"] = { "<cmd> HopChar2 <CR>" },
+	},
+}
+
 return M
