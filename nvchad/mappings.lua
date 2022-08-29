@@ -112,4 +112,10 @@ M.crates = {
 	},
 }
 
+M.undotree = {
+	n = {
+		["<leader>ut"] = { ":lua require('undotree').toggle() <CR>" },
+	},
+}
+
 return M

@@ -7,7 +7,7 @@ return {
 		end,
 	},
 
-	-- rust
+	-- rust stuffs
 	["simrat39/rust-tools.nvim"] = {
 		ft = { "rust" },
 	},
@@ -17,10 +17,10 @@ return {
 		requires = "nvim-lua/plenary.nvim",
 		config = function()
 			require("crates").setup()
-		end
+		end,
 	},
 
-	-- lsp enhance
+	-- lsp enhancements
 	["stevearc/aerial.nvim"] = {
 		after = "nvim-treesitter",
 		cmd = "AerialToggle",
@@ -54,6 +54,14 @@ return {
 		module = "shade",
 		config = function()
 			require("custom.plugins.shade")
+		end,
+	},
+
+	-- undotree
+	["jiaoshijie/undotree"] = {
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("undotree").setup()
 		end,
 	},
 
