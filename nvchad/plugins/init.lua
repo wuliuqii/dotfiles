@@ -7,6 +7,18 @@ return {
 		end,
 	},
 
+	-- markdown
+	["iamcco/markdown-preview.nvim"] = {
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+		ft = { "markdown" },
+	},
+
+	["ellisonleao/glow.nvim"] = {
+		ft = { "markdown" },
+	},
+
 	-- rust stuffs
 	["simrat39/rust-tools.nvim"] = {
 		ft = { "rust" },

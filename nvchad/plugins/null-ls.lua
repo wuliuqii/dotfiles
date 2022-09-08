@@ -18,6 +18,9 @@ local sources = {
 	-- rust
 	b.formatting.rustfmt,
 	b.formatting.taplo,
+
+	-- markdown
+	b.formatting.cbfmt,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

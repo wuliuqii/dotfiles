@@ -13,6 +13,7 @@ M.treesitter = {
 		"lua",
 		"go",
 		"rust",
+		"markdown",
 	},
 }
 
@@ -82,6 +83,10 @@ M.mason = {
 		-- rust
 		"rust-analyzer",
 		"taplo",
+
+		-- markdown
+		"marksman",
+		"cbfmt",
 	},
 }
 
