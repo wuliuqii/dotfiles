@@ -3,7 +3,7 @@
 local M = {}
 
 M.telescope = {
-	extensions_list = { "themes", "terms", "aerial" },
+	extensions_list = { "themes", "terms", "aerial", "projects" },
 }
 
 M.treesitter = {
@@ -28,6 +28,13 @@ M.nvimtree = {
 				git = true,
 			},
 		},
+	},
+
+	sync_root_with_cwd = true,
+	respect_buf_cwd = true,
+	update_focused_file = {
+		enable = true,
+		update_root = true,
 	},
 }
 

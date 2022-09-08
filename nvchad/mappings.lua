@@ -129,4 +129,10 @@ M.hop = {
 	},
 }
 
+M.telescope = {
+	n = {
+		["<C-p>"] = { ":lua require'telescope'.extensions.project.project{}<CR>" },
+	},
+}
+
 return M

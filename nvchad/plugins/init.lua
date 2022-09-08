@@ -37,6 +37,16 @@ return {
 		end,
 	},
 
+	-- projects management
+	["ahmedkhalf/project.nvim"] = {
+		event = "VimEnter",
+		config = function()
+			require("project_nvim").setup()
+		end,
+	},
+
+	["nvim-telescope/telescope-project.nvim"] = {},
+
 	-- minimal modes
 	["Pocco81/TrueZen.nvim"] = {
 		cmd = {
