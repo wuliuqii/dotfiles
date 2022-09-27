@@ -18,7 +18,11 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 
 eval "$(starship init zsh)"
 
-export ZSH_CONFIG="$HOME/src/dotfiles"
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+
+export ZSH_CONFIG="$HOME/.config/dotfiles"
 source $ZSH_CONFIG/zsh-z/zsh-z.plugin.zsh
 source $ZSH_CONFIG/zsh-completions/zsh-completions.plugin.zsh
 fpath=(./zsh-completions/src $fpath)
