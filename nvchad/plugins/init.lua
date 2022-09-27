@@ -1,3 +1,5 @@
+local overrides = require "custom.plugins.override"
+
 return {
 	-- format & linting
 	["jose-elias-alvarez/null-ls.nvim"] = {
@@ -38,6 +40,35 @@ return {
 		cmd = "AerialToggle",
 		config = function()
 			require("aerial").setup()
+		end,
+	},
+
+	["ThePrimeagen/refactoring.nvim"] = {
+		ft = { "go" },
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+		config = function()
+			require("refactoring").setup({
+				-- prompt for return type
+				prompt_func_return_type = {
+					go = true,
+				},
+				-- prompt for function parameters
+				prompt_func_param_type = {
+					go = true,
+				},
+			})
+		end,
+	},
+
+	["lukas-reineke/virt-column.nvim"] = {
+		event = "BufRead",
+		config = function()
+			vim.opt.colorcolumn = "120"
+			vim.cmd("highlight clear ColorColumn")
+			require("virt-column").setup()
 		end,
 	},
 
@@ -95,15 +126,43 @@ return {
 		end,
 	},
 
-	["goolord/alpha-nvim"] = {
-		disable = false,
-		cmd = "Alpha",
-	},
 
+	-- Override plugin definition options
 	["neovim/nvim-lspconfig"] = {
 		config = function()
 			require("plugins.configs.lspconfig")
 			require("custom.plugins.lspconfig")
 		end,
+	},
+
+	-- overrde plugin configs
+	["goolord/alpha-nvim"] = {
+		disable = false,
+		cmd = "Alpha",
+		override_options = overrides.alpha,
+	},
+
+	["nvim-treesitter/nvim-treesitter"] = {
+		override_options = overrides.treesitter,
+	},
+
+	["williamboman/mason.nvim"] = {
+		override_options = overrides.mason,
+	},
+
+	["kyazdani42/nvim-tree.lua"] = {
+		override_options = overrides.nvimtree,
+	},
+
+	["lukas-reineke/indent-blankline.nvim"] = {
+		override_options=overrides.blankline
+	},
+
+	["nvim-telescope/telescope.nvim"] = {
+		override_options = overrides.telescope
+	},
+
+	["hrsh7th/nvim-cmp"] = {
+		override_options = overrides.cmp
 	},
 }

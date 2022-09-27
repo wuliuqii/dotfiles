@@ -135,4 +135,10 @@ M.telescope = {
 	},
 }
 
+M.refactoring = {
+	v = {
+		["<leader>rr"] = { ":lua require('refactoring').select_refactor()<CR>" },
+	},
+}
+
 return M

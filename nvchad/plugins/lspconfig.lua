@@ -2,7 +2,7 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
-local servers = { "gopls", "rust_analyzer", "taplo", "marksman" }
+local servers = { "gopls", "rust_analyzer", "taplo", "marksman", "bash-language-server" }
 
 local opts = {}
 
