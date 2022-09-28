@@ -13,8 +13,8 @@ M.general = {
 
 		["<S-h>"] = { "^", "begin of line" },
 		["<S-l>"] = { "$", "end of line" },
-		["<C-q>"] = { ":q <CR>", "quit" },
-		["<C-s>"] = { ":w <CR>", "save" },
+		["<C-q>"] = { ":q! <CR>", "quit" },
+		["<C-s>"] = { ":w! <CR>", "save" },
 
 		[";"] = { ":" },
 	},
