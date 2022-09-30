@@ -14,6 +14,11 @@ alias vz="nvim ~/.zshrc"
 alias vv="nvim ~/.config/nvim/init.lua"
 alias lg="lazygit"
 alias gv="cd ~/.config/nvim"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 eval "$(starship init zsh)"
