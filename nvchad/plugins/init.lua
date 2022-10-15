@@ -1,4 +1,4 @@
-local overrides = require "custom.plugins.override"
+local overrides = require("custom.plugins.override")
 
 return {
 	-- format & linting
@@ -126,6 +126,13 @@ return {
 		end,
 	},
 
+	-- tmux
+	["aserowy/tmux.nvim"] = {
+		config = function()
+			require("tmux").setup()
+		end,
+	},
+
 	-- Override plugin definition options
 	["neovim/nvim-lspconfig"] = {
 		config = function()
@@ -154,14 +161,14 @@ return {
 	},
 
 	["lukas-reineke/indent-blankline.nvim"] = {
-		override_options=overrides.blankline
+		override_options = overrides.blankline,
 	},
 
 	["nvim-telescope/telescope.nvim"] = {
-		override_options = overrides.telescope
+		override_options = overrides.telescope,
 	},
 
 	["hrsh7th/nvim-cmp"] = {
-		override_options = overrides.cmp
+		override_options = overrides.cmp,
 	},
 }
