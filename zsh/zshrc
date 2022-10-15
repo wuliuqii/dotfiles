@@ -28,6 +28,7 @@ export SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
 
 export ZSH_CONFIG="$HOME/.config/dotfiles/zsh"
+source $ZSH_CONFIG/git-open/git-open.plugin.zsh
 source $ZSH_CONFIG/zsh-z/zsh-z.plugin.zsh
 source $ZSH_CONFIG/zsh-completions/zsh-completions.plugin.zsh
 fpath=(./zsh-completions/src $fpath)
