@@ -80,6 +80,9 @@ M.mason = {
 		-- go
 		"gopls",
 		"golangci-lint",
+		"golangci-lint-langserver",
+		"goimports-reviser",
+		"golines",
 
 		-- rust
 		"rust-analyzer",

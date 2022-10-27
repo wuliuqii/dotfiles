@@ -13,6 +13,8 @@ local sources = {
 
 	-- go
 	b.formatting.gofmt,
+	b.formatting.golines,
+	b.formatting.goimports_reviser,
 	b.diagnostics.golangci_lint,
 
 	-- rust
