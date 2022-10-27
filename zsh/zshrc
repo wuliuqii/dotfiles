@@ -5,7 +5,7 @@ export PATH=$PATH:~/Library/Application\ Support/neovim/bin:~/.local/share/neovi
 
 alias vim="nvim"
 alias c="clear"
-alias ls="ls --color=auto"
+alias ls="exa"
 alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -al"
