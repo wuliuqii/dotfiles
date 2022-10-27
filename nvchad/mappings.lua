@@ -141,4 +141,11 @@ M.refactoring = {
 	},
 }
 
+M.todo = {
+	n = {
+		["]t"] = { ":lua require('todo-comments').jump_next()" },
+		["[t"] = { ":lua require('todo-comments').jump_prev()" },
+	},
+}
+
 return M
