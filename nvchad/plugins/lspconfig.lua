@@ -30,6 +30,12 @@ for _, lsp in ipairs(servers) do
 			server = {
 				on_attach = on_attach,
 				capabilities = capabilities,
+				cmd = {
+					"rustup",
+					"run",
+					"nightly",
+					"rust-analyzer",
+				},
 				settings = {
 					["rust-analyzer"] = {
 						lens = {
