@@ -3,6 +3,9 @@ export http_proxy="http://127.0.0.1:15236"
 
 export PATH=$PATH:~/Library/Application\ Support/neovim/bin:~/.local/share/neovim/bin:~/go/bin
 
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 alias vim="nvim"
 alias c="clear"
 alias ls="exa"
