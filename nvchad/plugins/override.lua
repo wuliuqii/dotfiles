@@ -15,6 +15,7 @@ M.treesitter = {
 		"rust",
 		"markdown",
 		"make",
+		"python",
 	},
 }
 
@@ -91,6 +92,11 @@ M.mason = {
 		-- markdown
 		"marksman",
 		"prettier",
+
+		-- python
+		"pyright",
+		"pylint",
+		"black",
 	},
 }
 

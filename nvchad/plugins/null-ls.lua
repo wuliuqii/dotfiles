@@ -23,6 +23,10 @@ local sources = {
 
 	-- markdown
 	b.formatting.prettier,
+
+	-- python
+	b.diagnostics.pylint,
+	b.formatting.black,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
